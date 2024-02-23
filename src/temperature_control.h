@@ -3,15 +3,15 @@
 
 class TemperatureControl {
 public:
-    TemperatureControl(int minTemp, int maxTemp);
+    TemperatureControl(float minTemp, float maxTemp);
 
-    void updateTemperature(int currentTemp);
+    void updateTemperature(float currentTemp);
     bool isHeating() const;
     bool isCooling() const;
 
 private:
-    int minTemp_;
-    int maxTemp_;
+    float minTemp_;
+    float maxTemp_;
     bool heating_;
     bool cooling_;
 };

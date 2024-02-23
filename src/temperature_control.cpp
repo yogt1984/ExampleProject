@@ -1,9 +1,9 @@
 #include "temperature_control.h"
 
-TemperatureControl::TemperatureControl(int minTemp, int maxTemp)
+TemperatureControl::TemperatureControl(float minTemp, float maxTemp)
     : minTemp_(minTemp), maxTemp_(maxTemp), heating_(false), cooling_(false) {}
 
-void TemperatureControl::updateTemperature(int currentTemp) {
+void TemperatureControl::updateTemperature(float currentTemp) {
     if (currentTemp < minTemp_) {
         heating_ = true;
         cooling_ = false;
