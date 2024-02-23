@@ -19,3 +19,4 @@ TEST(TemperatureControlTest, NoActionTest) {
     ASSERT_FALSE(control.isHeating());
     ASSERT_FALSE(control.isCooling());
 }
+
